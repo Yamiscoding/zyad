@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+.calendar {
+    display: grid;
+    grid-template-columns: 80px repeat(7, 1fr);
+    grid-template-rows: 40px repeat(48, 40px); /* 30min*/
+    gap: 2px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: Inter, sans-serif;
+}
+
+.time-header {
+    text-align: center;
+    font-weight: bold;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.day {
+    text-align: center;
+    font-weight: bold;
+    background: #4CAF50;
+    color: white;
+    padding: 5px;
+    border: 1px solid #ddd;
+    grid-row: 1;
+
+}
+
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    grid-column: 1; /*first col*/
+}
+
+.task {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        border: 2px solid black;    
+}

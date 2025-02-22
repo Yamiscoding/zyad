@@ -1,0 +1,5 @@
+[
+    { "text": "Meeting", "start": "09:30 AM", "end": "10:30 AM", "day": "Tuesday", "color": "#ffcc00" },
+    { "text": "Work", "start": "09:00 AM", "end": "11:00 AM", "day": "Sunday", "color": "#ff7777" },
+    { "text": "Test Task", "start": "04:00 PM", "end": "04:30 PM", "day": "Sunday", "color": "#6b7c2c" }
+]
