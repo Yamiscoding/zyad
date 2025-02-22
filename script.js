@@ -21,7 +21,7 @@ function addtasktoCalender(task) {
     let column = Week.indexOf(task.day) + 2;
 
     if (column < 2) {
-        console.error(`Error: Invalid day '${task.day}'`);
+        console.error(`err: Invalid day '${task.day}'`);
         return;
     }
 
@@ -38,10 +38,9 @@ function addtasktoCalender(task) {
     document.querySelector(".calendar").appendChild(taskElement);
 }
 
-// Fetch tasks from a file instead of hardcoding
 fetch("tasks.json")
     .then(response => response.json())
     .then(tasks => {
         tasks.forEach(addtasktoCalender);
     })
-    .catch(error => console.error("Error loading tasks:", error));
+    .catch(error => console.error("error loading tasks:", error));
